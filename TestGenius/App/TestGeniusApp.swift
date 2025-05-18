@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct TestGeniusApp: App {
+    @StateObject private var vm = QuizViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: vm)
         }
     }
 }

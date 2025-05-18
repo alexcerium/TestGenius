@@ -3,23 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		43023E3F2C00FDE4006C3508 /* TestGeniusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43023E3E2C00FDE4006C3508 /* TestGeniusApp.swift */; };
-		43023E412C00FDE4006C3508 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43023E402C00FDE4006C3508 /* ContentView.swift */; };
 		43023E432C00FDE5006C3508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43023E422C00FDE5006C3508 /* Assets.xcassets */; };
 		43023E462C00FDE5006C3508 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43023E452C00FDE5006C3508 /* Preview Assets.xcassets */; };
+		43023E4E2C00FE48006C3508 /* Answers.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 43023E4C2C00FE48006C3508 /* Answers.pdf */; };
+		43023E4F2C00FE48006C3508 /* Questions.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 43023E4D2C00FE48006C3508 /* Questions.pdf */; };
+		4369C4AC2DD9E2B4002FDFCD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4369C4AB2DD9E2B4002FDFCD /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		43023E3B2C00FDE4006C3508 /* TestGenius.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestGenius.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		43023E3E2C00FDE4006C3508 /* TestGeniusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestGeniusApp.swift; sourceTree = "<group>"; };
-		43023E402C00FDE4006C3508 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		43023E422C00FDE5006C3508 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43023E452C00FDE5006C3508 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		43023E4C2C00FE48006C3508 /* Answers.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Answers.pdf; sourceTree = "<group>"; };
+		43023E4D2C00FE48006C3508 /* Questions.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Questions.pdf; sourceTree = "<group>"; };
+		4369C4AB2DD9E2B4002FDFCD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		4369C4A82DD9E239002FDFCD /* App */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = App; sourceTree = "<group>"; };
+		4369C4A92DD9E265002FDFCD /* Model */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Model; sourceTree = "<group>"; };
+		4369C4AA2DD9E27B002FDFCD /* ViewModel */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewModel; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		43023E382C00FDE4006C3508 /* Frameworks */ = {
@@ -51,8 +59,10 @@
 		43023E3D2C00FDE4006C3508 /* TestGenius */ = {
 			isa = PBXGroup;
 			children = (
-				43023E3E2C00FDE4006C3508 /* TestGeniusApp.swift */,
-				43023E402C00FDE4006C3508 /* ContentView.swift */,
+				4369C4A82DD9E239002FDFCD /* App */,
+				4369C4A92DD9E265002FDFCD /* Model */,
+				4369C4AA2DD9E27B002FDFCD /* ViewModel */,
+				4302F75C2C4542D900173260 /* View */,
 				43023E422C00FDE5006C3508 /* Assets.xcassets */,
 				43023E442C00FDE5006C3508 /* Preview Content */,
 			);
@@ -62,9 +72,19 @@
 		43023E442C00FDE5006C3508 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				43023E4C2C00FE48006C3508 /* Answers.pdf */,
+				43023E4D2C00FE48006C3508 /* Questions.pdf */,
 				43023E452C00FDE5006C3508 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4302F75C2C4542D900173260 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4369C4AB2DD9E2B4002FDFCD /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,6 +101,11 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				4369C4A82DD9E239002FDFCD /* App */,
+				4369C4A92DD9E265002FDFCD /* Model */,
+				4369C4AA2DD9E27B002FDFCD /* ViewModel */,
 			);
 			name = TestGenius;
 			productName = TestGenius;
@@ -125,6 +150,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43023E4F2C00FE48006C3508 /* Questions.pdf in Resources */,
+				43023E4E2C00FE48006C3508 /* Answers.pdf in Resources */,
 				43023E462C00FDE5006C3508 /* Preview Assets.xcassets in Resources */,
 				43023E432C00FDE5006C3508 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43023E412C00FDE4006C3508 /* ContentView.swift in Sources */,
-				43023E3F2C00FDE4006C3508 /* TestGeniusApp.swift in Sources */,
+				4369C4AC2DD9E2B4002FDFCD /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +304,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,8 +332,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
